@@ -1,0 +1,26 @@
+#include "util.hpp"
+#include "graphics.hpp"
+#include <vector>
+
+class Actor : util::Rect
+{
+	protected:
+	//all images that compose the actor
+	std::vector< Image > vImage;
+	
+	public:
+	virtual void draw();
+	virtual void update();
+};
+
+class Player : public Actor
+{
+	void draw();
+	void update();
+};
+
+class Enemy : public Actor
+{
+	void draw();
+	void update();
+};

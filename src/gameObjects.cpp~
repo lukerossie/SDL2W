@@ -1,0 +1,31 @@
+#include "../include/gameObjects.hpp"
+
+virtual void Actor::draw()
+{
+	for( auto ele : vImage )
+	{
+		ele.draw();
+	}
+}
+virtual void Actor::update()
+{
+	
+}
+
+void Player::draw()
+{
+
+}
+void Player::update()
+{
+
+}
+
+void Enemy::draw()
+{
+
+}
+void Enemy::update()
+{
+
+}

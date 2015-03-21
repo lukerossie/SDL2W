@@ -1,0 +1,26 @@
+#pragma once
+#include "SDL2/SDL.h"
+#include <vector>
+
+namespace util
+{
+
+struct Vector2
+{
+	int x, y;
+	Vector2();
+	Vector2( int, int );
+	Vector2 operator+( Vector2 const &other );
+	Vector2 operator-( Vector2 const &other );
+};
+struct Rect : Vector2
+{
+	int w, h;
+	Rect();
+	Rect( int x, int y, int w, int h );
+};
+
+bool insec( SDL_Rect a, SDL_Rect b );//returns true if the rectangles are intersecting
+int randNum(int min, int max);
+
+}//</util>

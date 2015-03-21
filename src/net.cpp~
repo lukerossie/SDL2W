@@ -1,0 +1,6 @@
+#include "../include/net.hpp"
+
+namespace prag
+{
+
+}//</prag>
